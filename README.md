@@ -16,7 +16,7 @@
     sudo psql -U postgres lidar < lidar_dmp.sql
 
 ### LAS convert options in Geoverse Convert Software
-- New Jersey State Plane (NAD 1983 - 2011 Correction) projection in feed.  ESPG:6527
+- New Jersey State Plane (NAD 1983 - 2011 Correction) projection in feed. [ESPG:6527](https://epsg.io/6527)
 - output projection is blank
 - 3 cm pixel
 - Intensity value scale grayscale 0-65000.
