@@ -7,10 +7,12 @@
 
 
 ### This code helps you dump the database to a file
+
+    ```pg_dump --username=postgres --encoding=ISO88591 -f lidar_dmp.sql lidar```
+    ```sudo -u postgres createdb lidar```
+
 ### then reinflate on the server side
-```pg_dump --username=postgres --encoding=ISO88591 -f lidar_dmp.sql lidar```
-```sudo -u postgres createdb lidar```
-```sudo psql -U postgres lidar < lidar_dmp.sql```
+    ```sudo psql -U postgres lidar < lidar_dmp.sql```
 
 
 
