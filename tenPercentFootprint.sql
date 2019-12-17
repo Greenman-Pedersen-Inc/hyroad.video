@@ -1,4 +1,4 @@
-CREATE TABLE footprint ( like base including all);
+CREATE TABLE footprint (like base including all);
 
 INSERT INTO footprint (time_stamp, x, y, z, roll, pitch, yaw, geom2d)
 SELECT time_stamp, x, y, z, roll, pitch, yaw, geom2d FROM (
