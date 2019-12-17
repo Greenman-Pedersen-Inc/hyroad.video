@@ -3,7 +3,7 @@
 
 ### Import GeoGSON into PostGIS database
     ogr2ogr -f "PostgreSQL" PG:"dbname=hillsborough user=postgres" "/home/ubuntu/webfiles/hillsborough/hillsborough_census_blocks.geojson" -nln hillsborough_census_blocks -append
-    
+
 ### Convert shape file into sql statement and import into PostGIS database
     shp2pgsql -c -D -s 4326 -i -I tl_2010_12057_bg10.shp > census_blocks.sql
     psql -d hillsborough -f census_blocks.sql
@@ -20,3 +20,19 @@
 - output projection is blank
 - 3 cm pixel
 - Intensity value scale grayscale 0-65000.
+
+
+### Assumed Mission Folder Setup (sample)
+    |_CR634
+        |_BASE
+            |_ LAS
+                |_ trajectory_eb.las
+                |_ trajectory_wb.las
+            |_ GOPRO
+                |_ CR634
+                    |_ FRONT LEFT
+                    |_ FRONT RIGHT
+                    |_ REAR RIGHT
+                    |_ REAR LEFT                
+            |_ UDS
+                |_ merged_las.uds
