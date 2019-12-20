@@ -20,7 +20,7 @@
 - output projection is blank
 - 3 cm pixel
 - Intensity value scale grayscale 0-65000.
-
+- Render directions seperately (they are not registered together).
 
 ### Assumed Mission Folder Setup (sample)
     |_CR634
