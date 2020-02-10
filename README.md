@@ -16,8 +16,17 @@
     sudo psql -U postgres lidar < lidar_dmp.sql
 
 ### LAS convert options in Geoverse Convert Software
+- Geometry units need to match the input
 - New Jersey State Plane (NAD 1983 - 2011 Correction) projection in feed. [ESPG:6527](https://epsg.io/6527)
-- output projection is blank
+- output projection the same as input so that it will show up in geoverse when loaded
+- 3 cm pixel
+- Intensity value scale grayscale 0-65000.
+- Render directions seperately (they are not registered together).
+
+### LAS convert options in Geoverse Convert Software
+- Geometry units need to match the input (feet)
+- Florida East (NAD 1983 - 2011 Correction) projection in feed. [ESPG:2236](http://epsg.io/2236)
+- output projection the same as input so that it will show up in geoverse when loaded
 - 3 cm pixel
 - Intensity value scale grayscale 0-65000.
 - Render directions seperately (they are not registered together).
